@@ -22,6 +22,11 @@ namespace Cognosis.Utility
             return h0 * Math.Exp(- distance * distance / (2 * sigma * sigma));
         }
 
+        internal static double ScaleLinearFunction(double randomValue)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Calculates the value of the Scalar Gain Function, which is a function that decreases over time
         /// </summary>
@@ -48,8 +53,8 @@ namespace Cognosis.Utility
         /// <summary>
         /// Computes Euclidean distance of two points whose coordinates are given by lists
         /// </summary>
-        /// <param name="coordinate1"></param>
-        /// <param name="coordinate2"></param>
+        /// <param name="coordinate1">Coordinates of the first point</param>
+        /// <param name="coordinate2">Coordinates of the second point</param>
         /// <returns>Distance between both points</returns>
         public static double ComputeEuclideanDistance(List<double> coordinate1, List<double> coordinate2)
         {
@@ -59,6 +64,20 @@ namespace Cognosis.Utility
                 (number2 - number1) * (number2 - number1)
             );
             return Math.Sqrt(acumulatedValues.Sum());
+        }
+
+        /// <summary>
+        /// Scales a number betweeon 0 and 1 to a range defined by a minimum and a maximum. This function uses a linear function of the form y = m * x + b
+        /// </summary>
+        /// <param name="minimum">Maximum value in the scaling range</param>
+        /// <param name="maximum">Minimum value in the scaling range</param>
+        /// <param name="x">Value to be scaled</param>
+        /// <returns>Value scaled</returns>
+        public static double ScaleLinearFunction(double minimum, double maximum, double x)
+        {
+            double m = (maximum - minimum);
+            double b = (minimum);
+            return m * x + b; 
         }
     }
 }

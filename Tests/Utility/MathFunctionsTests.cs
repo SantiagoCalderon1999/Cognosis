@@ -106,5 +106,24 @@ namespace Cognosis.Utility.Tests
             // Then
             // InvalidMathParameterException should be thrown
         }
+
+        [TestMethod()]
+        public void ScaleLinearFunction()
+        {
+            // Given
+            double minimum = 21.8;
+            double maximum = 65.3;
+            double input1 = 0;
+            double input2 = 1;
+
+            //  When
+            double result1 = MathFunctions.ScaleLinearFunction(minimum, maximum, input1);
+            double result2 = MathFunctions.ScaleLinearFunction(minimum, maximum, input2);
+
+            // Then
+            Assert.AreEqual(minimum, result1);
+            Assert.AreEqual(maximum, result2);
+
+        }
     }
 }
