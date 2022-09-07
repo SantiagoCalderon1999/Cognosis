@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cognosis\Source.csproj" />
+    <ProjectReference Include="..\Source\Source.csproj" />
   </ItemGroup>
 
 </Project>

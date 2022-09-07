@@ -6440,8 +6440,8 @@
     },
     "Source/1.0.0": {
       "type": "project",
-      "path": "../Cognosis/Source.csproj",
-      "msbuildProject": "../Cognosis/Source.csproj"
+      "path": "../Source/Source.csproj",
+      "msbuildProject": "../Source/Source.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6481,8 +6481,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Source.csproj": {
-              "projectPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Source.csproj"
+            "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Source\\Source.csproj": {
+              "projectPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Source\\Source.csproj"
             }
           }
         }

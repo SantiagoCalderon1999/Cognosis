@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Cognosis.SOM
+namespace Cognosis.ModelKohonen
 {
     /// <summary>
     /// Creates a Self-Organized Map, also called Kohonen Network

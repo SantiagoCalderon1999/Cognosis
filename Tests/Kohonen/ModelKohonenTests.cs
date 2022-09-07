@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Cognosis.SOM;
+using Cognosis.ModelKohonen;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Moq;
 
-namespace Cognosis.SOM.Tests
+namespace Cognosis.ModelKohonen.Tests
 {
     [TestClass()]
     public class ModelKohonenTests

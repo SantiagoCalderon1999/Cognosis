@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Cognosis.SOM;
+using Cognosis.ModelKohonen;
 
 namespace Examples
 {

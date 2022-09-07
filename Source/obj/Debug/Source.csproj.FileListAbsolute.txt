@@ -4,3 +4,9 @@ C:\Users\lenovo\source\repos\Cognosis\Cognosis\obj\Debug\Source.csproj.AssemblyR
 C:\Users\lenovo\source\repos\Cognosis\Cognosis\obj\Debug\Source.csproj.CoreCompileInputs.cache
 C:\Users\lenovo\source\repos\Cognosis\Cognosis\obj\Debug\Cognosis.dll
 C:\Users\lenovo\source\repos\Cognosis\Cognosis\obj\Debug\Cognosis.pdb
+C:\Users\lenovo\source\repos\Cognosis\Source\bin\Debug\Cognosis.dll
+C:\Users\lenovo\source\repos\Cognosis\Source\bin\Debug\Cognosis.pdb
+C:\Users\lenovo\source\repos\Cognosis\Source\obj\Debug\Source.csproj.AssemblyReference.cache
+C:\Users\lenovo\source\repos\Cognosis\Source\obj\Debug\Source.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\source\repos\Cognosis\Source\obj\Debug\Cognosis.dll
+C:\Users\lenovo\source\repos\Cognosis\Source\obj\Debug\Cognosis.pdb

@@ -4,21 +4,6 @@
     "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examples\\Examples.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Source.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Source.csproj",
-        "projectName": "Source",
-        "projectPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Source.csproj",
-        "frameworks": {
-          "net472": {
-            "projectReferences": {}
-          }
-        }
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
     "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examples\\Examples.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -43,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Source.csproj": {
-                "projectPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Source.csproj"
+              "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Source\\Source.csproj": {
+                "projectPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Source\\Source.csproj"
               }
             }
           }
@@ -75,6 +60,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Source\\Source.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Source\\Source.csproj",
+        "projectName": "Source",
+        "projectPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Source\\Source.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
       }
     }
   }
