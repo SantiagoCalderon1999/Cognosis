@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examplem\\Examples.csproj": {}
+    "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examples\\Examples.csproj": {}
   },
   "projects": {
     "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Source.csproj": {
@@ -19,14 +19,14 @@
         "net472": {}
       }
     },
-    "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examplem\\Examples.csproj": {
+    "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examples\\Examples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examplem\\Examples.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examples\\Examples.csproj",
         "projectName": "Examples",
-        "projectPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examplem\\Examples.csproj",
+        "projectPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examples\\Examples.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examplem\\obj\\",
+        "outputPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Examples\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
