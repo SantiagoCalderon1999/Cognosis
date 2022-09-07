@@ -1,4 +1,5 @@
-﻿using Cognosis.Utility;
+﻿
+using Cognosis.Utility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +9,18 @@ namespace Cognosis.SOM
     /// <summary>
     /// Creates a Self-Organized Map, also called Kohonen Network
     /// </summary>
-    public class Model
+    public class ModelKohonen
     {
 
         private List<List<double>> _weights;
+        public List<List<double>> Weights
+        {
+            get
+            {
+                return _weights;
+            }
+
+        }
         private List<List<double>> _input;
         private double _sigma0;
         private int _numberOfWeights;
@@ -19,9 +28,9 @@ namespace Cognosis.SOM
         /// <summary>
         /// No args constructor
         /// </summary>
-        public Model()
+        public ModelKohonen()
         {
-
+            
         }
 
         /// <summary>
@@ -30,7 +39,7 @@ namespace Cognosis.SOM
         /// <param name="input">Input of the network</param>
         /// <param name="sigma0">Initial value of sigma</param>
         /// <param name="numberOfWeights">Number of weights that are going to be used in the neural network</param>
-        public Model(List<List<double>> input, double sigma0, int numberOfWeights)
+        public ModelKohonen(List<List<double>> input, double sigma0, int numberOfWeights)
         {
             this._input = input;
             this._sigma0 = sigma0;
@@ -42,18 +51,30 @@ namespace Cognosis.SOM
         }
 
         /// <summary>
+        /// Trains the model created in the class
+        /// </summary>
+        /// <param name="iterations">Number of iterations</param>
+        public void Train(int iterations)
+        {
+            for (int currentIteration = 0; currentIteration < iterations; currentIteration++)
+            {
+               _weights = Step(currentIteration);
+            }
+        }
+
+        /// <summary>
         /// Executes an iteration in the neural network
         /// </summary>
         /// <param name="iteration">Number of iteration</param>
         /// <returns>List of updated weights</returns>
-        public IEnumerable<IEnumerable<double>> Step(int iteration)
+        public List<List<double>> Step(int iteration)
         {
             int currentInputIndex = iteration % _input.Count;
             List<double> currentInputCoordinates = _input[currentInputIndex];
 
             // Get the distance from each weight to the current input
-            List<double> geometricDistances = (List<double>)_weights.Select(weightCoordinates =>
-                MathFunctions.ComputeEuclideanDistance(weightCoordinates, currentInputCoordinates));
+            List<double> geometricDistances = _weights.Select(weightCoordinates =>
+                MathFunctions.ComputeEuclideanDistance(weightCoordinates, currentInputCoordinates)).ToList();
 
             // Get the index of the minimum distance from one weight to the current input
             double minimumDistance = geometricDistances.Min();
@@ -63,9 +84,7 @@ namespace Cognosis.SOM
             double sigma = MathFunctions.GetScalarGainFunction(_sigma0, iteration);
 
             // Update weights based on Topological neighbourhood
-            _weights = (List<List<double>>)UpdateTopologicalNeighbourhood(indexMinimumDistance, sigma);
-
-            return _weights;
+            return UpdateTopologicalNeighbourhood(indexMinimumDistance, sigma, currentInputCoordinates);
         }
 
         /// <summary>
@@ -99,19 +118,23 @@ namespace Cognosis.SOM
         /// </summary>
         /// <param name="minimumIndex">Index of the value with the minimum distance</param>
         /// <param name="sigma">Sigma value obtained from the Scalar Gain Function</param>
+        /// <param name="currentInputCoordinates">Coordinates of the input in the current iteration</param>
         /// <returns>List of weights updated with the topological neghbourhood function</returns>
-        private IEnumerable<IEnumerable<double>> UpdateTopologicalNeighbourhood(int minimumIndex, double sigma)
+        private List<List<double>> UpdateTopologicalNeighbourhood(int minimumIndex, double sigma, List<double> currentInputCoordinates)
         {
-            return _weights.Zip(_input, (weightCoordinates, inputCoordinates) =>
+            List<List<double>> updatedWeights = new List<List<double>>();
+            foreach (List<double> weightCoordinates in _weights)
             {
                 int currentIndex = _weights.FindIndex(weight => weight == weightCoordinates);
-                return weightCoordinates.Zip(inputCoordinates, (individualWeight, individualInput) =>
+                List<double> updatedIndividualWeight = weightCoordinates.Zip(currentInputCoordinates, (individualWeight, individualInput) =>
                 {
                     double hk = MathFunctions.GetTopologicalNeighbourhood(1, (minimumIndex - currentIndex), sigma);
                     return hk * hk * (individualInput - individualWeight) + individualWeight;
                 }
-                );
-            });
+                ).ToList();
+                updatedWeights.Add(updatedIndividualWeight);
+            }
+            return updatedWeights;
         }
 
     }

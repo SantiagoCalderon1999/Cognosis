@@ -1661,13 +1661,13 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "Cognosis/1.0.0": {
+      "Source/1.0.0": {
         "type": "project",
         "compile": {
-          "bin/placeholder/Cognosis.dll": {}
+          "bin/placeholder/Source.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Cognosis.dll": {}
+          "bin/placeholder/Source.dll": {}
         }
       }
     }
@@ -6113,18 +6113,18 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "Cognosis/1.0.0": {
+    "Source/1.0.0": {
       "type": "project",
-      "path": "../Cognosis/Cognosis.csproj",
-      "msbuildProject": "../Cognosis/Cognosis.csproj"
+      "path": "../Cognosis/Source.csproj",
+      "msbuildProject": "../Cognosis/Source.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Cognosis >= 1.0.0",
       "MSTest.TestAdapter >= 2.2.3",
       "MSTest.TestFramework >= 2.2.3",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
+      "Source >= 1.0.0",
       "coverlet.collector >= 3.0.2"
     ]
   },
@@ -6155,8 +6155,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Cognosis.csproj": {
-              "projectPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Cognosis.csproj"
+            "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Source.csproj": {
+              "projectPath": "C:\\Users\\lenovo\\source\\repos\\Cognosis\\Cognosis\\Source.csproj"
             }
           }
         }

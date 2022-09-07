@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Cognosis.SOM.Tests
 {
     [TestClass()]
-    public class ModelTests
+    public class ModelKohonenTests
     {
 
         [TestMethod()]
@@ -22,7 +22,7 @@ namespace Cognosis.SOM.Tests
             int dimensionOfEachWeight = 3;
 
             // When
-            Model SOM = new Model();
+            ModelKohonen SOM = new ModelKohonen();
             List<List<double>> resultList = SOM.InitializeWeights(minimum,
                                                                     maximum,
                                                                     numberOfWeights,

@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\InvalidMathParameterException.cs" />
-    <Compile Include="SOM\Model.cs" />
+    <Compile Include="Kohonen\ModelKohonen.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utility\MathFunctions.cs" />
   </ItemGroup>

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32106.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cognosis", "Cognosis\Cognosis.csproj", "{1FDA1777-E2EB-40EB-9679-03FC870674DD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Source", "Cognosis\Source.csproj", "{1FDA1777-E2EB-40EB-9679-03FC870674DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{4482CA6A-6141-4735-BF74-0FBDF0C65127}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{4482CA6A-6141-4735-BF74-0FBDF0C65127}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Examplem\Examples.csproj", "{863E1904-F1BC-49DD-BE3F-7460721B6A92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4482CA6A-6141-4735-BF74-0FBDF0C65127}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4482CA6A-6141-4735-BF74-0FBDF0C65127}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4482CA6A-6141-4735-BF74-0FBDF0C65127}.Release|Any CPU.Build.0 = Release|Any CPU
+		{863E1904-F1BC-49DD-BE3F-7460721B6A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863E1904-F1BC-49DD-BE3F-7460721B6A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863E1904-F1BC-49DD-BE3F-7460721B6A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863E1904-F1BC-49DD-BE3F-7460721B6A92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

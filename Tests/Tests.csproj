@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Cognosis\Cognosis.csproj" />
+    <ProjectReference Include="..\Cognosis\Source.csproj" />
   </ItemGroup>
 
 </Project>
