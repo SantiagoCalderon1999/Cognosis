@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\Genetic\Elitism.cs" />
     <Compile Include="Algorithms\Genetic\ModelGenetic.cs" />
+    <Compile Include="Algorithms\Genetic\Mutation.cs" />
     <Compile Include="Algorithms\Genetic\Tournament.cs" />
     <Compile Include="Exceptions\InvalidMathParameterException.cs" />
     <Compile Include="Algorithms\Kohonen\ModelKohonen.cs" />
